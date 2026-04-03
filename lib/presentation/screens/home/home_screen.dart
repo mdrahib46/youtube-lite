@@ -85,41 +85,45 @@ class _HomeScreenState extends State<HomeScreen> {
             YoutubeNavTile(
               icon: Icons.explore,
               label: AppStrings.navExplore,
-              onTap: () {},
+              onTap: () => _openUrl(AppStrings.navExplore, YoutubeUrls.explore),
             ),
             YoutubeNavTile(
               icon: Icons.trending_up,
               label: AppStrings.navTrending,
-              onTap: () {},
+              onTap: () =>
+                  _openUrl(AppStrings.navTrending, YoutubeUrls.trending),
             ),
             Divider(height: 1, color: AppColors.textHint),
             _buildSectionHeader(AppStrings.sectionLibrary),
             YoutubeNavTile(
               icon: Icons.history,
               label: AppStrings.navHistory,
-              onTap: () {},
+              onTap: () => _openUrl(AppStrings.navHistory, YoutubeUrls.history),
             ),
             YoutubeNavTile(
-              icon: Icons.watch_later,
+              icon: Icons.watch_later_outlined,
               label: AppStrings.navWatchLater,
-              onTap: () {},
+              onTap: () =>
+                  _openUrl(AppStrings.navWatchLater, YoutubeUrls.watchLater),
             ),
             YoutubeNavTile(
-              icon: Icons.video_library,
+              icon: Icons.thumb_up_alt_outlined,
               label: AppStrings.navLikedVideos,
-              onTap: () {},
+              onTap: () =>
+                  _openUrl(AppStrings.navLikedVideos, YoutubeUrls.likedVideos),
             ),
             Divider(height: 1, color: AppColors.textHint),
             _buildSectionHeader(AppStrings.sectionMore),
             YoutubeNavTile(
-              icon: Icons.settings,
+              icon: Icons.settings_outlined,
               label: AppStrings.navSettings,
-              onTap: () {},
+              onTap: () =>
+                  _openUrl(AppStrings.navSettings, YoutubeUrls.settings),
             ),
             YoutubeNavTile(
               icon: Icons.help_outline,
               label: AppStrings.navHelp,
-              onTap: () {},
+              onTap: () => _openUrl(AppStrings.navHelp, YoutubeUrls.help),
             ),
           ],
         ),
